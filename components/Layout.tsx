@@ -5,9 +5,7 @@ const Layout: NextComponentType = ({ children }) => {
   return (
     <div className="p-6 md:px-10 lg:px-14 lg:py-10">
       <Header />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   )
 }

@@ -4,7 +4,12 @@ import Image from 'next/image'
 const MobileMenu: NextComponentType = () => {
   return (
     <button className="leading-none">
-      <Image src="/shared/icon-hamburger.svg" alt="Open Menu" width={24} height={21} />
+      <Image
+        src="/shared/icon-hamburger.svg"
+        alt="Open Menu"
+        width={24}
+        height={21}
+      />
     </button>
   )
 }

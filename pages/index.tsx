@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import content from '../public/data.json';
+import content from '../public/data.json'
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +14,16 @@ const Home: NextPage = () => {
 
       <Layout>
         <section className="text-white pt-12 text-center">
-          <h2 className="font-barlow-condensed text-subheading2 uppercase text-space-accent">So, you want to travel to</h2>
+          <h2 className="font-barlow-condensed text-subheading2 uppercase text-space-accent">
+            So, you want to travel to
+          </h2>
           <h1 className="font-bellefair text-[80px] uppercase">Space</h1>
-          <p className="font-barlow text-base p-2">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+          <p className="font-barlow text-base p-2">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
         </section>
         <button className="block font-bellefair uppercase text-xl text-space-accent leading-6 tracking-wide bg-white h-36 w-36 rounded-full mx-auto mt-20">
           Explore

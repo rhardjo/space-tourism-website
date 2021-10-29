@@ -1,16 +1,16 @@
-import type { NextPage } from "next";
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
+import type { NextPage } from 'next'
+import { useState } from 'react'
+import Head from 'next/head'
+import Image from 'next/image'
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout'
 
-import content from "../public/data.json";
+import content from '../public/data.json'
 
 const Destinations: NextPage = () => {
   const [activeDestinationIndex, setActiveDestinationIndex] =
-    useState<number>(0);
-  const destinationData = content.destinations[activeDestinationIndex];
+    useState<number>(0)
+  const destinationData = content.destinations[activeDestinationIndex]
 
   return (
     <div className="min-h-screen w-full bg-destination-mobile md:bg-destination-tablet xl:bg-destination-desktop bg-cover bg-no-repeat">
@@ -38,7 +38,7 @@ const Destinations: NextPage = () => {
             {content.destinations.map((destination, index) => (
               <button
                 className={`uppercase font-barlow-condensed text-sm ${
-                  activeDestinationIndex === index && "border-b-2"
+                  activeDestinationIndex === index && 'border-b-2'
                 }`}
                 key={destination.name}
                 onClick={() => setActiveDestinationIndex(index)}
@@ -72,7 +72,7 @@ const Destinations: NextPage = () => {
         </section>
       </Layout>
     </div>
-  );
-};
+  )
+}
 
-export default Destinations;
+export default Destinations
