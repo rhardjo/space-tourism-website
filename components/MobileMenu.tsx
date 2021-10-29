@@ -1,9 +1,16 @@
 import type { NextComponentType } from 'next'
 import Image from 'next/image'
+import { useSidebar } from '../context/SidebarContext'
 
 const MobileMenu: NextComponentType = () => {
+  const { isSidebarOpen, toggleSidebar } = useSidebar()
+
   return (
-    <button className="leading-none">
+    <button
+      className="leading-none"
+      onClick={toggleSidebar}
+      aria-hidden={isSidebarOpen}
+    >
       <Image
         src="/shared/icon-hamburger.svg"
         alt="Open Menu"

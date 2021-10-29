@@ -56,16 +56,16 @@ const Destinations: NextPage = () => {
               {destinationData.description}
             </p>
             <hr className="my-8 opacity-20" />
-            <h4 className="font-barlow-condensed text-sm text-space-accent uppercase pb-1">
+            <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-1">
               Avg. distance
             </h4>
-            <span className="font-bellefair text-xl uppercase">
+            <span className="font-bellefair text-subheading2 uppercase">
               {destinationData.distance}
             </span>
-            <h4 className="font-barlow-condensed text-sm text-space-accent uppercase pb-1 mt-8">
+            <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-1 mt-8">
               Est. travel time
             </h4>
-            <span className="font-bellefair text-xl uppercase">
+            <span className="font-bellefair text-subheading2 uppercase">
               {destinationData.travel}
             </span>
           </article>

@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             world experience!
           </p>
         </section>
-        <button className="block font-bellefair uppercase text-xl text-space-accent leading-6 tracking-wide bg-white h-36 w-36 rounded-full mx-auto mt-20">
+        <button className="block font-bellefair uppercase text-xl text-space-black leading-6 tracking-wide bg-white h-36 w-36 rounded-full mx-auto mt-20">
           Explore
         </button>
       </Layout>
