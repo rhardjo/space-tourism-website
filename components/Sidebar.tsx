@@ -29,28 +29,28 @@ const Sidebar: NextComponentType = () => {
         <ul className="space-y-8 text-white font-barlow-condensed text-base tracking-widest uppercase">
           <li>
             <Link href="/">
-              <a>
+              <a onClick={toggleSidebar}>
                 <b className="pr-2">00</b>Home
               </a>
             </Link>
           </li>
           <li>
             <Link href="/destinations">
-              <a>
+              <a onClick={toggleSidebar}>
                 <b className="pr-2">01</b>Destination
               </a>
             </Link>
           </li>
           <li>
             <Link href="/crew">
-              <a>
+              <a onClick={toggleSidebar}>
                 <b className="pr-2">02</b>Crew
               </a>
             </Link>
           </li>
           <li>
             <Link href="/technology">
-              <a>
+              <a onClick={toggleSidebar}>
                 <b className="pr-2">03</b>Technology
               </a>
             </Link>
