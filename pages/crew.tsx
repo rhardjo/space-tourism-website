@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 
 import content from '../public/data.json'
 
@@ -21,10 +22,7 @@ const Crew: NextPage = () => {
 
       <Layout>
         <section className="text-white pt-6 text-center">
-          <h1 className="font-barlow-condensed text-subheading2 uppercase pb-8">
-            <span className="text-white text-opacity-25 pr-2">02</span> Meet
-            your crew
-          </h1>
+          <PageHeader pageIndex="02" pageTitle="Meet your crew" />
 
           <Image
             src={crewData.images.png}
