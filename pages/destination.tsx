@@ -27,20 +27,24 @@ const Destination: NextPage = () => {
             pageIndex="01"
             pageTitle="Pick
             your destination"
+            className="md:text-left md:text-xl"
           />
 
-          <Image
-            src={destinationData.images.png}
-            alt={destinationData.name}
-            width={170}
-            height={170}
-          />
+          <div className="relative mx-auto my-4 h-44 w-44 md:h-72 md:w-72">
+            <Image
+              src={destinationData.images.png}
+              alt={destinationData.name}
+              layout="fill"
+              className="object-contain"
+            />
+          </div>
 
-          <section className="space-x-6 py-6">
+          <section className="space-x-6 py-6 md:py-8">
             {content.destinations.map((destination, index) => (
               <button
-                className={`uppercase font-barlow-condensed text-sm ${
-                  activeDestinationIndex === index && 'border-b-2'
+                className={`uppercase font-barlow-condensed text-sm md:text-subheading2 pb-2 md:pb-3 ${
+                  activeDestinationIndex === index &&
+                  'border-b-2 md:border-b-[3px]'
                 }`}
                 key={destination.name}
                 onClick={() => setActiveDestinationIndex(index)}
@@ -50,26 +54,32 @@ const Destination: NextPage = () => {
             ))}
           </section>
 
-          <article>
-            <h2 className="font-bellefair text-heading3 uppercase">
+          <article className="md:max-w-xl mx-auto">
+            <h2 className="font-bellefair text-heading3 md:text-[80px] md:leading-[92px] uppercase">
               {destinationData.name}
             </h2>
-            <p className="font-barlow text-base text-space-accent">
+            <p className="font-barlow text-base leading-[28px] text-space-accent">
               {destinationData.description}
             </p>
             <hr className="my-8 opacity-20" />
-            <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-1">
-              Avg. distance
-            </h4>
-            <span className="font-bellefair text-subheading2 uppercase">
-              {destinationData.distance}
-            </span>
-            <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-1 mt-8">
-              Est. travel time
-            </h4>
-            <span className="font-bellefair text-subheading2 uppercase">
-              {destinationData.travel}
-            </span>
+            <aside className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <section>
+                <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-3">
+                  Avg. distance
+                </h4>
+                <span className="font-bellefair text-subheading1 uppercase">
+                  {destinationData.distance}
+                </span>
+              </section>
+              <section>
+                <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-3">
+                  Est. travel time
+                </h4>
+                <span className="font-bellefair text-subheading1 uppercase">
+                  {destinationData.travel}
+                </span>
+              </section>
+            </aside>
           </article>
         </section>
       </Layout>
