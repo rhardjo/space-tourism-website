@@ -12,9 +12,10 @@ const Header: NextComponentType = () => {
   return (
     <header className="w-full flex justify-between items-center">
       <Logo />
-      <MobileMenu />
-      <nav className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl -mr-10 px-12 hidden md:block">
-        <ul className="space-x-9 text-white font-barlow-condensed text-sm tracking-widest uppercase">
+
+      <hr className="w-full h-[1px] bg-white opacity-25 ml-16 -mr-10 hidden lg:block z-10" />
+      <nav className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl -mr-10 lg:-mr-14 px-12 lg:px-32 hidden md:block">
+        <ul className="space-x-9 text-white font-barlow-condensed text-sm tracking-widest lg:text-subheading2 uppercase whitespace-nowrap">
           {pages.map((page) => (
             <li
               className={`inline-block py-10 ${
@@ -24,7 +25,9 @@ const Header: NextComponentType = () => {
             >
               <Link href={page.path}>
                 <a>
-                  <b className="pr-2 hidden">{page.prefixIndex}</b>
+                  <b className="pr-2 hidden lg:inline-block">
+                    {page.prefixIndex}
+                  </b>
                   {page.label}
                 </a>
               </Link>
@@ -32,6 +35,7 @@ const Header: NextComponentType = () => {
           ))}
         </ul>
       </nav>
+      <MobileMenu />
     </header>
   )
 }
