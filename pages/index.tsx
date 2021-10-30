@@ -13,19 +13,21 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout>
-        <section className="text-white pt-12 text-center">
-          <h2 className="font-barlow-condensed text-subheading2 uppercase text-space-accent">
+        <section className="text-white pt-12 md:pt-28 text-center">
+          <h2 className="font-barlow-condensed text-subheading2 md:text-xl uppercase text-space-accent">
             So, you want to travel to
           </h2>
-          <h1 className="font-bellefair text-[80px] uppercase">Space</h1>
-          <p className="font-barlow text-base p-2">
+          <h1 className="font-bellefair text-[80px] md:text-heading1 md:pt-4 uppercase">
+            Space
+          </h1>
+          <p className="font-barlow text-space-accent text-base mx-auto md:leading-7 md:max-w-sm p-2">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
         </section>
-        <button className="block font-bellefair uppercase text-xl text-space-black leading-6 tracking-wide bg-white h-36 w-36 rounded-full mx-auto mt-20">
+        <button className="block font-bellefair uppercase text-xl md:text-heading4 text-space-black leading-6 tracking-wide bg-white h-36 w-36 md:h-60 md:w-60 rounded-full mx-auto mt-20 md:mt-40">
           Explore
         </button>
       </Layout>
