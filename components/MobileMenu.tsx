@@ -7,7 +7,7 @@ const MobileMenu: NextComponentType = () => {
 
   return (
     <button
-      className="leading-none"
+      className="leading-none md:hidden"
       onClick={toggleSidebar}
       aria-hidden={isSidebarOpen}
     >

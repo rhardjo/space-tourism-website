@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 
-import content from '../public/data.json'
+import content from '../data.json'
 
 const Technology: NextPage = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0)

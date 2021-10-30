@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import content from '../public/data.json'
+import content from '../data.json'
 
 const Home: NextPage = () => {
   return (

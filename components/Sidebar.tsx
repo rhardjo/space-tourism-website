@@ -2,6 +2,7 @@ import type { NextComponentType } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSidebar } from '../context/SidebarContext'
+import { pages } from '../constants/pages'
 
 const Sidebar: NextComponentType = () => {
   const { isSidebarOpen, toggleSidebar } = useSidebar()
@@ -27,34 +28,16 @@ const Sidebar: NextComponentType = () => {
 
       <nav className="pt-16">
         <ul className="space-y-8 text-white font-barlow-condensed text-base tracking-widest uppercase">
-          <li>
-            <Link href="/">
-              <a onClick={toggleSidebar}>
-                <b className="pr-2">00</b>Home
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/destinations">
-              <a onClick={toggleSidebar}>
-                <b className="pr-2">01</b>Destination
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/crew">
-              <a onClick={toggleSidebar}>
-                <b className="pr-2">02</b>Crew
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/technology">
-              <a onClick={toggleSidebar}>
-                <b className="pr-2">03</b>Technology
-              </a>
-            </Link>
-          </li>
+          {pages.map((page) => (
+            <li key={page.prefixIndex}>
+              <Link href={page.path}>
+                <a onClick={toggleSidebar}>
+                  <b className="pr-2">{page.prefixIndex}</b>
+                  {page.label}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </aside>

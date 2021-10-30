@@ -6,9 +6,9 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 
-import content from '../public/data.json'
+import content from '../data.json'
 
-const Destinations: NextPage = () => {
+const Destination: NextPage = () => {
   const [activeDestinationIndex, setActiveDestinationIndex] =
     useState<number>(0)
   const destinationData = content.destinations[activeDestinationIndex]
@@ -77,4 +77,4 @@ const Destinations: NextPage = () => {
   )
 }
 
-export default Destinations
+export default Destination
