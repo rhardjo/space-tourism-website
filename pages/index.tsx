@@ -8,6 +8,7 @@ import {
   CALL_TO_ACTION,
   HERO_TEXT_LARGE,
   HERO_DESCRIPTION,
+  HERO_TEXT_SMALL,
 } from '../constants/pages/homepage'
 
 const Home: NextPage = () => {
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
         <div className="h-full lg:grid lg:grid-cols-2 lg:items-end lg:gap-64">
           <section className="text-white pt-12 md:pt-28 lg:pt-64 text-center lg:text-left">
             <h2 className="font-barlow-condensed text-subheading2 md:text-xl lg:text-heading5 uppercase text-space-accent">
-              {HERO_TEXT_LARGE}
+              {HERO_TEXT_SMALL}
             </h2>
             <h1 className="font-bellefair text-[80px] md:text-heading1 md:pt-4 lg:pt-6 uppercase">
               {HERO_TEXT_LARGE}
