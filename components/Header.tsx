@@ -10,7 +10,7 @@ const Header: NextComponentType = () => {
   const router = useRouter()
 
   return (
-    <header className="w-full flex justify-between items-center">
+    <header className="w-full flex justify-between items-center md:pt-0">
       <Logo />
 
       <hr className="w-full h-[1px] bg-white opacity-25 ml-16 -mr-10 hidden lg:block z-10" />
