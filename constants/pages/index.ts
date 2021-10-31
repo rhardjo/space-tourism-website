@@ -4,7 +4,7 @@ type Page = {
   path: string
 }
 
-export const pages: Page[] = [
+export const PAGES: Page[] = [
   {
     prefixIndex: '00',
     label: 'Home',
