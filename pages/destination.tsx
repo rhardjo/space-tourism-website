@@ -27,10 +27,10 @@ const Destination: NextPage = () => {
             pageIndex="01"
             pageTitle="Pick
             your destination"
-            className="md:text-left md:text-xl"
+            className="md:text-left md:text-xl lg:text-heading5"
           />
 
-          <div className="relative mx-auto my-4 h-44 w-44 md:h-72 md:w-72">
+          <div className="relative mx-auto my-4 h-44 w-44 md:h-72 md:w-72 lg:h-[445px] lg:w-[445px]">
             <Image
               src={destinationData.images.png}
               alt={destinationData.name}
@@ -38,7 +38,8 @@ const Destination: NextPage = () => {
               className="object-contain"
             />
           </div>
-
+        </section>
+        <section className="text-white text-center lg:text-left">
           <section className="space-x-6 py-6 md:py-8">
             {content.destinations.map((destination, index) => (
               <button
@@ -55,13 +56,13 @@ const Destination: NextPage = () => {
           </section>
 
           <article className="md:max-w-xl mx-auto">
-            <h2 className="font-bellefair text-heading3 md:text-[80px] md:leading-[92px] uppercase">
+            <h2 className="font-bellefair text-heading3 md:text-[80px] lg:text-heading2 md:leading-[92px] uppercase">
               {destinationData.name}
             </h2>
-            <p className="font-barlow text-base leading-[28px] text-space-accent">
+            <p className="font-barlow text-base lg:text-body leading-[28px] lg:pt-4 text-space-accent">
               {destinationData.description}
             </p>
-            <hr className="my-8 opacity-20" />
+            <hr className="my-8 lg:mt-14 opacity-20" />
             <aside className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <section>
                 <h4 className="font-barlow-condensed text-sm tracking-widest text-space-accent uppercase pb-3">
