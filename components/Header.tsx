@@ -17,14 +17,13 @@ const Header: NextComponentType = () => {
       <nav className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl -mr-10 lg:-mr-14 px-12 lg:px-32 hidden md:block">
         <ul className="space-x-9 text-white font-barlow-condensed text-sm tracking-widest lg:text-subheading2 uppercase whitespace-nowrap">
           {pages.map((page) => (
-            <li
-              className={`inline-block py-10 ${
-                router.pathname === page.path && 'border-b-[3px] border-white'
-              }`}
-              key={page.prefixIndex}
-            >
+            <li className="inline-block" key={page.prefixIndex}>
               <Link href={page.path}>
-                <a>
+                <a
+                  className={`inline-block py-10 border-white hover:border-b-[3px] hover:border-opacity-50 ${
+                    router.pathname === page.path && 'border-b-[3px]'
+                  }`}
+                >
                   <b className="pr-2 hidden lg:inline-block">
                     {page.prefixIndex}
                   </b>

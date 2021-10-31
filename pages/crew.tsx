@@ -36,7 +36,7 @@ const Crew: NextPage = () => {
               <section className="space-x-4 lg:space-x-6 py-5 border-t-[1px] md:border-0 border-opacity-20 lg:pt-24">
                 {content.crew.map((crewMember, index) => (
                   <button
-                    className={`w-[10px] h-[10px] lg:w-4 lg:h-4 rounded-full bg-white ${
+                    className={`w-[10px] h-[10px] lg:w-4 lg:h-4 rounded-full bg-white hover:bg-opacity-50 ${
                       currentIndex === index
                         ? 'bg-opacity-100'
                         : 'bg-opacity-20'

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/Layout'
-import content from '../data.json'
 
 const Home: NextPage = () => {
   return (
@@ -28,9 +28,12 @@ const Home: NextPage = () => {
               this world experience!
             </p>
           </section>
-          <button className="block font-bellefair uppercase text-xl md:text-heading4 text-space-black leading-6 tracking-wide bg-white h-36 w-36 md:h-60 md:w-60 lg:h-72 lg:w-72 rounded-full mx-auto lg:mr-0 mt-20 md:mt-40">
-            Explore
-          </button>
+
+          <Link href="/destination">
+            <a className="flex justify-center items-center font-bellefair uppercase text-xl md:text-heading4 text-space-black leading-6 tracking-wide bg-white h-36 w-36 md:h-60 md:w-60 lg:h-72 lg:w-72 rounded-full mx-auto lg:mr-0 mt-20 md:mt-40 transition-shadow hover:ring-[5rem] ring-white ring-opacity-10">
+              Explore
+            </a>
+          </Link>
         </div>
       </Layout>
     </div>

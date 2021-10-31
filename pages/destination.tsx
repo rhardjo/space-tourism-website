@@ -43,7 +43,7 @@ const Destination: NextPage = () => {
             <section className="space-x-6 py-6 md:py-8">
               {content.destinations.map((destination, index) => (
                 <button
-                  className={`uppercase font-barlow-condensed text-sm md:text-subheading2 pb-2 md:pb-3 ${
+                  className={`uppercase font-barlow-condensed text-sm md:text-subheading2 pb-2 md:pb-3 border-white hover:border-b-[3px] hover:border-opacity-50 ${
                     activeDestinationIndex === index &&
                     'border-b-2 md:border-b-[3px]'
                   }`}
