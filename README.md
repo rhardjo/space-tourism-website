@@ -31,12 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop
-![](https://i.postimg.cc/Fd9866WB/screenshot-desktop.jpg)
-Tablet
-![](https://i.postimg.cc/HcBR1tFs/screenshot-mobile.jpg)
-Mobile
-![](https://i.postimg.cc/1VXTmqZ0/screenshot-tablet.jpg)
+[![screenshot-desktop.jpg](https://i.postimg.cc/767458gw/screenshot-desktop.jpg)](https://postimg.cc/Fd9866WB)
+[![screenshot-tablet.jpg](https://i.postimg.cc/j24rhHg1/screenshot-tablet.jpg)](https://postimg.cc/1VXTmqZ0)
+[![screenshot-mobile.jpg](https://i.postimg.cc/qqTTnbLn/screenshot-mobile.jpg)](https://postimg.cc/HcBR1tFs)
 
 ### Links
 
